@@ -1,0 +1,283 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'update' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 silly mapToRegistry name babel-preset-es2015
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'babel-preset-es2015',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'babel-preset-es2015',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-es2015
+9 silly mapToRegistry name babel-core
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'babel-core',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'babel-core',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/babel-core
+14 silly mapToRegistry name babel-loader
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry data Result {
+17 silly mapToRegistry   raw: 'babel-loader',
+17 silly mapToRegistry   scope: null,
+17 silly mapToRegistry   name: 'babel-loader',
+17 silly mapToRegistry   rawSpec: '',
+17 silly mapToRegistry   spec: 'latest',
+17 silly mapToRegistry   type: 'tag' }
+18 silly mapToRegistry uri https://registry.npmjs.org/babel-loader
+19 silly mapToRegistry name babel-preset-react
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry data Result {
+22 silly mapToRegistry   raw: 'babel-preset-react',
+22 silly mapToRegistry   scope: null,
+22 silly mapToRegistry   name: 'babel-preset-react',
+22 silly mapToRegistry   rawSpec: '',
+22 silly mapToRegistry   spec: 'latest',
+22 silly mapToRegistry   type: 'tag' }
+23 silly mapToRegistry uri https://registry.npmjs.org/babel-preset-react
+24 silly mapToRegistry name html-webpack-plugin
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'html-webpack-plugin',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'html-webpack-plugin',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/html-webpack-plugin
+29 silly mapToRegistry name react-router
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'react-router',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   name: 'react-router',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/react-router
+34 silly mapToRegistry name webpack
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'webpack',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'webpack',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/webpack
+39 silly mapToRegistry name webpack-dev-server
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry data Result {
+42 silly mapToRegistry   raw: 'webpack-dev-server',
+42 silly mapToRegistry   scope: null,
+42 silly mapToRegistry   name: 'webpack-dev-server',
+42 silly mapToRegistry   rawSpec: '',
+42 silly mapToRegistry   spec: 'latest',
+42 silly mapToRegistry   type: 'tag' }
+43 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-server
+44 silly mapToRegistry name axios
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data Result {
+47 silly mapToRegistry   raw: 'axios',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'axios',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/axios
+49 silly mapToRegistry name react
+50 silly mapToRegistry using default registry
+51 silly mapToRegistry registry https://registry.npmjs.org/
+52 silly mapToRegistry data Result {
+52 silly mapToRegistry   raw: 'react',
+52 silly mapToRegistry   scope: null,
+52 silly mapToRegistry   name: 'react',
+52 silly mapToRegistry   rawSpec: '',
+52 silly mapToRegistry   spec: 'latest',
+52 silly mapToRegistry   type: 'tag' }
+53 silly mapToRegistry uri https://registry.npmjs.org/react
+54 silly mapToRegistry name react-dom
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data Result {
+57 silly mapToRegistry   raw: 'react-dom',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   name: 'react-dom',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/react-dom
+59 verbose request uri https://registry.npmjs.org/babel-loader
+60 verbose request no auth needed
+61 info attempt registry request try #1 at 12:43:32 PM
+62 verbose request id 12fb327b82e4ac01
+63 http request GET https://registry.npmjs.org/babel-loader
+64 verbose request uri https://registry.npmjs.org/babel-core
+65 verbose request no auth needed
+66 info attempt registry request try #1 at 12:43:32 PM
+67 http request GET https://registry.npmjs.org/babel-core
+68 verbose request uri https://registry.npmjs.org/babel-preset-react
+69 verbose request no auth needed
+70 info attempt registry request try #1 at 12:43:32 PM
+71 http request GET https://registry.npmjs.org/babel-preset-react
+72 verbose request uri https://registry.npmjs.org/html-webpack-plugin
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 12:43:32 PM
+75 http request GET https://registry.npmjs.org/html-webpack-plugin
+76 verbose request uri https://registry.npmjs.org/webpack
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 12:43:32 PM
+79 http request GET https://registry.npmjs.org/webpack
+80 verbose request uri https://registry.npmjs.org/webpack-dev-server
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 12:43:32 PM
+83 http request GET https://registry.npmjs.org/webpack-dev-server
+84 verbose request uri https://registry.npmjs.org/react
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 12:43:32 PM
+87 http request GET https://registry.npmjs.org/react
+88 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+89 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+90 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+91 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+92 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+93 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+94 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+95 verbose request uri https://registry.npmjs.org/axios
+96 verbose request no auth needed
+97 info attempt registry request try #1 at 12:43:32 PM
+98 verbose etag "3V4TOK70MLU7QIOQS7I7MNNKU"
+99 http request GET https://registry.npmjs.org/axios
+100 verbose request uri https://registry.npmjs.org/react-dom
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 12:43:32 PM
+103 verbose etag "EVOB508FLW635ZM882YEJS10P"
+104 http request GET https://registry.npmjs.org/react-dom
+105 verbose request uri https://registry.npmjs.org/react-router
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 12:43:32 PM
+108 verbose etag "BVFPK783IWFTAEFNPYH8GXLBL"
+109 http request GET https://registry.npmjs.org/react-router
+110 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+111 verbose request uri https://registry.npmjs.org/babel-preset-es2015
+112 verbose request no auth needed
+113 info attempt registry request try #1 at 12:43:32 PM
+114 verbose etag "BWK6YTM7EWDYGPTN7HTPJF1ZU"
+115 http request GET https://registry.npmjs.org/babel-preset-es2015
+116 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+117 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+118 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+119 info attempt registry request try #2 at 12:43:42 PM
+120 http request GET https://registry.npmjs.org/babel-loader
+121 info attempt registry request try #2 at 12:43:42 PM
+122 http request GET https://registry.npmjs.org/babel-core
+123 info attempt registry request try #2 at 12:43:42 PM
+124 http request GET https://registry.npmjs.org/babel-preset-react
+125 info attempt registry request try #2 at 12:43:42 PM
+126 http request GET https://registry.npmjs.org/html-webpack-plugin
+127 info attempt registry request try #2 at 12:43:42 PM
+128 http request GET https://registry.npmjs.org/webpack
+129 info attempt registry request try #2 at 12:43:42 PM
+130 http request GET https://registry.npmjs.org/webpack-dev-server
+131 info attempt registry request try #2 at 12:43:42 PM
+132 http request GET https://registry.npmjs.org/react
+133 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+134 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+135 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+136 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+137 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+138 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+139 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+140 info attempt registry request try #2 at 12:43:42 PM
+141 verbose etag "3V4TOK70MLU7QIOQS7I7MNNKU"
+142 http request GET https://registry.npmjs.org/axios
+143 info attempt registry request try #2 at 12:43:42 PM
+144 verbose etag "EVOB508FLW635ZM882YEJS10P"
+145 http request GET https://registry.npmjs.org/react-dom
+146 info attempt registry request try #2 at 12:43:42 PM
+147 verbose etag "BVFPK783IWFTAEFNPYH8GXLBL"
+148 http request GET https://registry.npmjs.org/react-router
+149 info attempt registry request try #2 at 12:43:42 PM
+150 verbose etag "BWK6YTM7EWDYGPTN7HTPJF1ZU"
+151 http request GET https://registry.npmjs.org/babel-preset-es2015
+152 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+153 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+154 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+155 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+156 info attempt registry request try #3 at 12:44:42 PM
+157 http request GET https://registry.npmjs.org/babel-loader
+158 info attempt registry request try #3 at 12:44:42 PM
+159 http request GET https://registry.npmjs.org/babel-core
+160 info attempt registry request try #3 at 12:44:42 PM
+161 http request GET https://registry.npmjs.org/babel-preset-react
+162 info attempt registry request try #3 at 12:44:42 PM
+163 http request GET https://registry.npmjs.org/html-webpack-plugin
+164 info attempt registry request try #3 at 12:44:42 PM
+165 http request GET https://registry.npmjs.org/webpack
+166 info attempt registry request try #3 at 12:44:42 PM
+167 http request GET https://registry.npmjs.org/webpack-dev-server
+168 info attempt registry request try #3 at 12:44:42 PM
+169 http request GET https://registry.npmjs.org/react
+170 info attempt registry request try #3 at 12:44:42 PM
+171 verbose etag "3V4TOK70MLU7QIOQS7I7MNNKU"
+172 http request GET https://registry.npmjs.org/axios
+173 info attempt registry request try #3 at 12:44:42 PM
+174 verbose etag "EVOB508FLW635ZM882YEJS10P"
+175 http request GET https://registry.npmjs.org/react-dom
+176 info attempt registry request try #3 at 12:44:42 PM
+177 verbose etag "BVFPK783IWFTAEFNPYH8GXLBL"
+178 http request GET https://registry.npmjs.org/react-router
+179 info attempt registry request try #3 at 12:44:42 PM
+180 verbose etag "BWK6YTM7EWDYGPTN7HTPJF1ZU"
+181 http request GET https://registry.npmjs.org/babel-preset-es2015
+182 silly get cb [ 304, undefined ]
+183 verbose etag https://registry.npmjs.org/axios from cache
+184 verbose get saving axios to /Users/Richard/.npm/registry.npmjs.org/axios/.cache.json
+185 verbose correctMkdir /Users/Richard/.npm correctMkdir not in flight; initializing
+186 silly get cb [ 304, undefined ]
+187 verbose etag https://registry.npmjs.org/react-dom from cache
+188 verbose get saving react-dom to /Users/Richard/.npm/registry.npmjs.org/react-dom/.cache.json
+189 verbose correctMkdir /Users/Richard/.npm correctMkdir already in flight; waiting
+190 silly get cb [ 304, undefined ]
+191 verbose etag https://registry.npmjs.org/react-router from cache
+192 verbose get saving react-router to /Users/Richard/.npm/registry.npmjs.org/react-router/.cache.json
+193 verbose correctMkdir /Users/Richard/.npm correctMkdir already in flight; waiting
+194 silly get cb [ 304, undefined ]
+195 verbose etag https://registry.npmjs.org/babel-preset-es2015 from cache
+196 verbose get saving babel-preset-es2015 to /Users/Richard/.npm/registry.npmjs.org/babel-preset-es2015/.cache.json
+197 verbose correctMkdir /Users/Richard/.npm correctMkdir already in flight; waiting
+198 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+198 verbose stack     at errnoException (dns.js:28:10)
+198 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:79:26)
+199 verbose cwd /Volumes/Transcend/React/Weather-App
+200 error Darwin 15.5.0
+201 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "update"
+202 error node v6.2.2
+203 error npm  v3.9.5
+204 error code ENOTFOUND
+205 error errno ENOTFOUND
+206 error syscall getaddrinfo
+207 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+208 error network This is most likely not a problem with npm itself
+208 error network and is related to network connectivity.
+208 error network In most cases you are behind a proxy or have bad network settings.
+208 error network
+208 error network If you are behind a proxy, please make sure that the
+208 error network 'proxy' config is set properly.  See: 'npm help config'
+209 verbose exit [ 1, true ]
