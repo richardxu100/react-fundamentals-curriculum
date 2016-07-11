@@ -1,9 +1,9 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/app/index.html',
   filename: 'index.html',
   inject: 'body'
-});
+})
 
 module.exports = {
   entry: [
@@ -16,8 +16,25 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
-      {test: /\.css$/, loader: "style-loader!css-loader"}
+      {test: /\.json$/, loader: 'json-loader'}
+      // {test: /\.css$/, loader: "style-loader!css-loader"}
     ]
   },
-  plugins: [HTMLWebpackPluginConfig]
+  plugins: [HTMLWebpackPluginConfig],
+  node: {
+    console: true,
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+  }  
 }
+
+// config.node = {
+//   console: 'empty',
+//   fs: 'empty',
+//   net: 'empty',
+//   tls: 'empty'
+// }
+
+
+

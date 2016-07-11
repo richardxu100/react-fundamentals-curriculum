@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactRouter from 'react-router';
-const Link = ReactRouter.link;
-require('../css/styles.css');
+import ReactRouter, { Link } from 'react-router';
+// const Link = ReactRouter.Link;
+require('../css/style.css');
 
 function Home(props) {
 	return (
@@ -14,3 +14,5 @@ function Home(props) {
 		</div>
 	)
 }
+
+module.exports = Home;
