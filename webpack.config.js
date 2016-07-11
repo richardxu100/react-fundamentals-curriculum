@@ -16,10 +16,13 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
+      {test: /\.css$/, loader: "style-loader!css-loader"},
       {test: /\.json$/, loader: 'json-loader'}
-      // {test: /\.css$/, loader: "style-loader!css-loader"}
     ]
   },
+  // resolve: {
+  //   extensions: ['', '.js', '.jsx', '.css']
+  // },
   plugins: [HTMLWebpackPluginConfig],
   node: {
     console: true,
@@ -28,13 +31,3 @@ module.exports = {
     tls: 'empty',
   }  
 }
-
-// config.node = {
-//   console: 'empty',
-//   fs: 'empty',
-//   net: 'empty',
-//   tls: 'empty'
-// }
-
-
-

@@ -1,10 +1,15 @@
 import React, {Component} from 'react';
-import Home from '../components/Home';
+// import Home from '../components/Home';
+import Masthead from '../components/Masthead';
+import Navbar from '../components/Navbar';
 
-export default class HelloWorld extends Component {
+export default class Main extends Component {
 	render() {
 		return (
-			<Home onSubmit={this.onSubmit} />
+			<Masthead>
+				<Navbar />		
+				{this.props.children}	
+			</Masthead>
 		)
 	}
 }
