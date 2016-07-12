@@ -13,4 +13,4 @@ function FrontPage(props) { //jsx is weird
 	)
 }
 
-module.exports = FrontPage;
+export default FrontPage;

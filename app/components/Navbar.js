@@ -15,4 +15,4 @@ function Navbar(props) {
 	)
 }
 
-module.exports = Navbar;
+export default Navbar;

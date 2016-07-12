@@ -12,8 +12,8 @@ function SearchBar(props) {
 					onChange={props.onUpdatePlace} 
 					value={props.place}
 				/>
-				<Link to="/forecast/:city">
-					<button className="ui primary button" type="submit">Get Weather</button>
+				<Link to="/forecast/:city" className="ui primary button" type="submit">
+					Get Weather
 				</Link>
 			</div>	
 		</form>
@@ -26,5 +26,5 @@ SearchBar.PropTypes = {
 	place: PropTypes.string.isRequired
 }
 
-module.exports = SearchBar;
+export default SearchBar;
 
