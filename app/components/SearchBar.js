@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import ReactRouter, { Link } from 'react-router'
 require('../styles/style.css');
 
 function SearchBar(props) {
@@ -11,7 +12,9 @@ function SearchBar(props) {
 					onChange={props.onUpdatePlace} 
 					value={props.place}
 				/>
-				<button className="ui primary button" type="submit">Get Weather</button>
+				<Link to="/forecast/:city">
+					<button className="ui primary button" type="submit">Get Weather</button>
+				</Link>
 			</div>	
 		</form>
 	)

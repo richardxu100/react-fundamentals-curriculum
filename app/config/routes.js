@@ -2,14 +2,14 @@ import React from 'react';
 import ReactRouter, { Router, Route, hashHistory, IndexRoute } from 'react-router';
 import MainLayout from '../layouts/MainLayout';
 import FrontPage from '../pages/FrontPage';
-import FiveDay from '../pages/FiveDay';
+import FiveDayContainer from '../containers/FiveDayContainer';
 
-// <Route path="forecast/:city" component={FiveDay} />			
+
 const routes = ( //check if this works
 	<Router history={hashHistory}>
 		<Route path="/" component={MainLayout}>
 			<IndexRoute component={FrontPage}/>
-			
+			<Route path="forecast/:city" component={FiveDayContainer} />						
 		</Route>
 	</Router>
 );
