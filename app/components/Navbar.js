@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import SearchBarContainer from '../containers/SearchBarContainer';
 require('../styles/style.css');
 
 function Navbar(props) {
@@ -9,7 +9,7 @@ function Navbar(props) {
 				<h3>Clever Title</h3>
 			</a>
 			<div className="right item">
-				<SearchBar />
+				<SearchBarContainer />
 			</div>
 		</div>		
 	)
