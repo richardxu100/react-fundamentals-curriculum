@@ -11,23 +11,22 @@ export default class SearchBarContainer extends Component {
 	}
 	
 	handleUpdatePlace(event) {
-		console.log('hi');
 		this.setState({
 			place: event.target.value
 		});
+		console.log(event.target.value);
 	}
 
 	handleSubmitPlace(event) {
 		event.preventDefault();
-		console.log('hi');
-		let place = this.state.place;
+		let place = this.state.place;	
 	}
-
+	
 	render() {
 		return (
 			<SearchBar 
 				onSubmitPlace={this.handleSubmitPlace} 
-				onUpdatePlace={this.handleUpdatePlace}
+				onUpdatePlace={this.handleUpdatePlace.bind(this)} //need to change the context of a function in a function
 				place={this.state.place}
 			/>
 		) 
