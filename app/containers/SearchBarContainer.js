@@ -13,18 +13,19 @@ export default class SearchBarContainer extends Component {
 		this.setState({
 			place: event.target.value
 		});
-		console.log(event.target.value)
+		// console.log(event.target.value)
 	}
 
 	handleSubmitPlace(event) {
 		event.preventDefault();
 		let place = this.state.place;	
 		const weather = 
-			weatherHelpers.getDailyWeather(place)
+			weatherHelpers.getFiveDay(place)
 				.then(function(info) {
 					console.log(info);
+					// console.log(info.data.weather[0].description);
 					return info;
-				})
+				})				
 	}
 	
 	render() {
