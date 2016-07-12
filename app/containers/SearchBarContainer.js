@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchBar from '../components/SearchBar';
+import weatherHelpers from '../utils/weatherHelpers';
 
 export default class SearchBarContainer extends Component {
 	
@@ -18,7 +19,12 @@ export default class SearchBarContainer extends Component {
 	handleSubmitPlace(event) {
 		event.preventDefault();
 		let place = this.state.place;	
-		console.log(place);
+		const weather = 
+			weatherHelpers.getDailyWeather(place)
+				.then(function(info) {
+					console.log(info);
+					return info;
+				})
 	}
 	
 	render() {
