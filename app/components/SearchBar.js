@@ -12,7 +12,7 @@ function SearchBar(props) {
 					onChange={props.onUpdatePlace} 
 					value={props.place}
 				/>
-				<Link to="/forecast/:city" className="ui primary button" type="submit">
+				<Link to={`/forecast/:${props.place}`} className="ui primary button" type="submit">
 					Get Weather
 				</Link>
 			</div>	
