@@ -1,11 +1,13 @@
 import React, { Proptypes } from 'react';
+import Day from './Day';
 require('../styles/style.css');
 
 function Forecast(props) {
 	console.log(props.place);
 	return props.isLoading === true
 		? <p>Loading</p>
-		: <h1>Data Received!</h1>
+		: <Day />
+
 }
 
 export default Forecast;

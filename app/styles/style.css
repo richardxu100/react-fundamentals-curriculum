@@ -21,4 +21,24 @@ h1.ui.centered.header {
 .input.container {
   text-align: center; }
 
+#place_header {
+  font-size: 50px;
+  font-weight: 200; }
+
+h3.ui.centered.header {
+  font-size: 30px;
+  color: #34495e; }
+
+.ui.centered.grid {
+  margin-top: 70px; }
+  .ui.centered.grid .four.wide.column {
+    text-align: center; }
+    .ui.centered.grid .four.wide.column h2.ui.icon.header {
+      font-size: 40px;
+      font-weight: 200;
+      padding-bottom: 20px;
+      color: #34495e; }
+      .ui.centered.grid .four.wide.column h2.ui.icon.header i {
+        transform: scale(2.3); }
+
 /*# sourceMappingURL=style.css.map */
