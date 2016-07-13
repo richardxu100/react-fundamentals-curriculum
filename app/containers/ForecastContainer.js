@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
-import Forecast from '../components/Forecast';
+import ForecastWrapper from '../components/ForecastWrapper';
 import weatherHelpers from '../utils/weatherHelpers';
 
 export default class ForecastContainer extends Component {
-	
+
+	getDefaultProps {
+		const today = new Date();
+		const dayNumber = today.getDay();
+		const dayName = weatherHelpers.getDayName();
+		const dayNames = [] 
+		return {
+			dayNames: []	
+		}
+	}
+
 	constructor() {
 		super();
 		this.state = {
@@ -26,7 +36,12 @@ export default class ForecastContainer extends Component {
 
 	render() {
 		return (
-			<Forecast place={this.props.params.place} isLoading={this.state.isLoading} weatherInfo={this.state.weatherInfo} />
+			<ForecastWrapper 
+				place={this.props.params.place} 
+				isLoading={this.state.isLoading} 
+				weatherInfo={this.state.weatherInfo} 
+				dayNames={this.props.dayNames} 
+			/>
 		)
 	}
 }

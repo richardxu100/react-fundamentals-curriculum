@@ -24,6 +24,11 @@ const weatherHelpers = {
 					console.warn('Error in weatherHelpers', err)
 				})				
 		);
+	},
+	getDayName(dayNumber) {
+		const fiveDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		return fiveDays[dayNumber];
+		console.log(days[today.getDay()]);		
 	}
 }
 
