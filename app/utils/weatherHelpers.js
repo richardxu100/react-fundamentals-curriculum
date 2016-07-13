@@ -14,7 +14,7 @@ const weatherHelpers = {
 				})
 		);
 	},
-	getFiveDay(place) {
+	getForecast(place) {
 		return (
 			axios.get(`http://api.openweathermap.org/data/2.5/forecast/daily?q=${place}&type=accurate&APPID=${API_KEY}&cnt=5`)
 				.then(function(info) {
