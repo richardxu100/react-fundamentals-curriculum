@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 require('../styles/style.css');
 
 function DayItem(props) {
@@ -10,6 +10,10 @@ function DayItem(props) {
       </h2>
     </div>
 	)
+}
+
+DayItem.propTypes = {
+	dayName: PropTypes.string.isRequired
 }
 
 export default DayItem;

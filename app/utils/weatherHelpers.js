@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_KEY = 'b0fd8846c344b26e531769707e956d72';
 
-const weatherHelpers = {
+const helpers = {
 	getDailyWeather(place) {
 		return (
 			axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${place}&type=accurate&APPID=${API_KEY}`)
@@ -25,11 +25,20 @@ const weatherHelpers = {
 				})				
 		);
 	},
-	getDayName(dayNumber) {
-		const fiveDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		return fiveDays[dayNumber];
-		console.log(days[today.getDay()]);		
-	}
+	addDays(todayNumber) {
+		const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	  const dayNames = [];
+	  for (let i = todayNumber; i < todayNumber + 5; i++) {
+	    dayNames.push(days[i]);
+	  }
+	  return dayNames;
+	},
+	getDayNames() {
+		let today = new Date();
+		let todayNumber = today.getDay();
+		let dayNames = this.addDays(todayNumber);							
+		return dayNames;		
+	}	
 }
 
-export default weatherHelpers;
+export default helpers;
