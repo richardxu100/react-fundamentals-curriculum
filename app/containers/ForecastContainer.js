@@ -3,16 +3,6 @@ import ForecastWrapper from '../components/ForecastWrapper';
 import helpers from '../utils/weatherHelpers';
 
 export default class ForecastContainer extends Component {
-
-	// getDefaultProps() {
-	// 	let today = new Date();
-	// 	let todayNumber = today.getDay();
-	// 	let dayNames = helpers.addNames(todayNumber);							
-	// 	console.log(dayNames); 
-	// 	return {
-	// 		dayNames: [dayNames]	
-	// 	}
-	// }
 	
 	constructor() {
 		super();
