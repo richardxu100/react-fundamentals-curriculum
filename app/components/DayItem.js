@@ -6,12 +6,12 @@ require('../styles/style.css');
 function DayItem(props) {
 	return (
     <div className="four wide column">
-      <h2 className="ui icon header">
-				<Link to={`/detail/${props.dayName}`} key={props.dayName}>	      
-  			 <img src={`../images/weather-icons/${props.icon}.svg`} alt="weather icon"/>
-        </Link>  
-        <div className="content">{props.dayName}</div>
-      </h2>
+      <Link to={`/detail/${props.dayName}`} key={props.dayName}>   
+        <h2 className="ui icon header">				     
+          <img src={`../../app/images/weather-icons/${props.icon}.svg`} alt="weather icon"/>
+          <div className="content">{props.dayName}</div>
+        </h2>
+      </Link>          
     </div>
 	)
 }

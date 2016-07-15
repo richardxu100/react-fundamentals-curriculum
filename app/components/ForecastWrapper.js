@@ -5,9 +5,6 @@ require('../styles/style.css');
 
 //use github icons
 function ForecastWrapper(props) {
-	// let dayData = props.weatherInfo.data.list;
-	// let dayData = props;
-	// console.log(dayData);
 	let dayNames = helpers.getDayNames();
 	let i = 0;
 	return props.isLoading === true
