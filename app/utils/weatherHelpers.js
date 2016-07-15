@@ -38,7 +38,18 @@ const helpers = {
 		let todayNumber = today.getDay();
 		let dayNames = this.addDays(todayNumber);							
 		return dayNames;		
-	}	
+	}
+	// iconChooser(weatherInfo, dayNumber) {
+	// 	if (weatherInfo.list[dayNumber].clouds > 30 && weatherInfo.list[dayNumber].rain > 10) {
+	// 		return 'day-rain';
+	// 	} else if (weatherInfo.list[dayNumber].clouds > 30) {
+	// 		return 'day-cloudy';
+	// 	} else if (weatherInfo.list[dayNumber].rain > 10) {
+	// 		return 'day-rain-wind';
+	// 	} else {
+	// 		return 'day-sunny';
+	// 	}
+	// }		
 }
 
 export default helpers;

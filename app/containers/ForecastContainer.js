@@ -8,7 +8,7 @@ export default class ForecastContainer extends Component {
 		super();
 		this.state = {
 			isLoading: true,
-			weatherInfo: [],
+			dayData: [],
 		};
 	}
 	
@@ -16,23 +16,22 @@ export default class ForecastContainer extends Component {
 		let place = this.props.params.place;
 		helpers.getForecast(place) 
 			.then(function(info) {
-				console.log(info);
+				let dayData = info.data.list;
 				this.setState({
-					weatherInfo: info,
-					isLoading: false,
+					dayData: dayData,
+					isLoading: false
 				})
 			}.bind(this));	//have to bind this in the inner function				
 	}
 
 	render() {
-		console.log(helpers.getDayNames());
 		let dayNames = helpers.getDayNames();
+		// let dayData = this.state.weatherInfo.data.list;
 		return (
 			<ForecastWrapper 
 				place={this.props.params.place} 
 				isLoading={this.state.isLoading} 
-				weatherInfo={this.state.weatherInfo} 
-				dayNames={dayNames} 
+				dayData={this.state.dayData} 
 			/>
 		)
 	}
