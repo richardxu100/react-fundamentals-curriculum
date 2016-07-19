@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import ReactRouter, { Link } from 'react-router'
 require('../styles/style.css');
 
-// <i className={`wi wi-${props.icon}`}></i>
 function DayItem(props) {
 	return (
     <div className="four wide column">
