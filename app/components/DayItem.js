@@ -6,7 +6,7 @@ require('../styles/style.css');
 function DayItem(props) {
 	return (
     <div className="four wide column">
-      <Link to={`/detail/${props.dayName}`} key={props.dayName}>   
+      <Link to={`/detail/${props.place}`} onClick={props.onClickPlace}>   
         <h2 className="ui icon header">				     
           <img src={`../../app/images/weather-icons/${props.icon}.svg`} alt="weather icon"/>
           <div className="content">{props.dayName}</div>
@@ -17,7 +17,9 @@ function DayItem(props) {
 }
 
 DayItem.propTypes = {
-	dayName: PropTypes.string.isRequired
+	dayName: PropTypes.string.isRequired,
+  onClickPlace: PropTypes.func,
+  icon: PropTypes.string.isRequired,
 }
 
 export default DayItem;

@@ -5,7 +5,6 @@ require('../styles/style.css');
 
 //use github icons
 function ForecastWrapper(props) {
-	let dayNames = helpers.getDayNames();
 	let i = 0;
 	return props.isLoading === true
 		? <p>Loading</p>
@@ -18,8 +17,10 @@ function ForecastWrapper(props) {
 							return (
 								<DayItem 
 									key={dayData.dt} 
-									dayName={dayNames[i]} 
-									icon={dayData.weather[0].icon}/>	
+									dayName={helpers.getDayName(dayData.dt)} 
+									icon={dayData.weather[0].icon}
+									onClickPlace={props.onClickPlace.bind(this, i)}
+								/>	
 							)
 							i++;
 						})}						
