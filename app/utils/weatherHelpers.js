@@ -71,7 +71,7 @@ const helpers = {
 	  return day + ', ' + month;
 	},
 	convertTemp (kelvin) {
- 	 return parseInt(((kelvin - 273.15)* 1.8000 + 32.00), 10)
+ 	 return parseInt((kelvin * 9 / 5) - 459.67);
 	}	
 }
 
