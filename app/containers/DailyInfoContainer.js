@@ -2,21 +2,16 @@ import React, { Component } from 'react';
 import DayItem from '../components/DayItem';
 import DailyInfo from '../components/DailyInfo';
 import helpers from '../utils/weatherHelpers';
+import styles from '../styles/index';
 
 export default class DailyInfoContainer extends Component {
 	
-				// <DailyInfo />			
-	// this.props.location.state.dayData.weather[0].icon
-	// <DayItem 
-	// 				dayName={helpers.getDayName(this.props.location.state.dayData.dt)} 
-	// 				icon={}
-	// 			/>
 	render() {
 		let dayNumber = this.props.location.state.dayNumber;
 		let dayData = this.props.location.state.dayData[dayNumber];
 		console.log(this);
 		return (
-			<div>
+			<div style={styles.dailyInfo}>
 				<DayItem 
 					dayName={helpers.getDayName(dayData.dt)}
 					icon={dayData.weather[0].icon}

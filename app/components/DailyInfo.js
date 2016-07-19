@@ -5,11 +5,11 @@ function DailyInfo(props) {
 	return (
 		<div className="row">
 		  <div className="four wide column">
-		    <h4>{props.place}</h4>
-		    <h4>{props.description}</h4>
-		    <h4>{helpers.convertTemp(props.minTemp)}</h4>
-		    <h4>{helpers.convertTemp(props.maxTemp)}</h4>  
-		    <h4>{props.humidity}</h4>  
+		    <h4>Area: {props.place}</h4>
+		    <h4>Description: {props.description}</h4>
+		    <h4>Min: {helpers.convertTemp(props.minTemp)}&#176;</h4>
+		    <h4>Max: {helpers.convertTemp(props.maxTemp)}&#176;</h4>  
+		    <h4>Humidity: {props.humidity}</h4>  
 		  </div>
 		</div>	
 	)
